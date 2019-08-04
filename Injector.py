@@ -30,7 +30,7 @@ if payload == "2":
  pay ="android/meterpreter/reverse_https" 
 if payload == "3":
  pay ="android/meterpreter/reverse_tcp"
-if payload == > "3":
+if payload > "3":
  print ("You need to choose a number between 1-3!")
  quit()
 
